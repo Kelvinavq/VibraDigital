@@ -179,8 +179,8 @@ function init() {
 	let tl = gsap.timeline();
 
 	tl.to(cardsContainerEl.children, {
-		delay: 0.15,
-		duration: 0.5,
+		delay: 0,
+		duration: 0,
 		stagger: {
 			ease: "power4.inOut",
 			from: "right",
