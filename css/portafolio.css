@@ -6,17 +6,6 @@
 }
 
 
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-button:focus {
-  outline: none;
-  border: none;
-}
-
-
 .portafolio{
     width: 100%;
     margin-top: 100px;
@@ -118,21 +107,7 @@ button:focus {
   perspective: 1000px;
 }
 
-@media (max-width: 620px) {
-  .cardList__btn.btn--left {
-    left: 130px;
-    font-size: 45px;
-    background: #0000007e;
-    border-radius: 15px;
-    
-  }
-  .cardList__btn.btn--right {
-    right: 130px;
-    font-size: 45px;
-    background: #0000007e;
-    border-radius: 15px;
-  }
-}
+
 
 .card {
   --card-translateY-offset: 100vh;
@@ -295,4 +270,30 @@ button:focus {
 }
 .support a:hover {
   transform: scale(1.1);
+}
+.cardList__btn{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primario);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cardList__btn .icon{
+  width: 30px;
+}
+
+
+@media (max-width: 620px) {
+  .cardList__btn.btn--left {
+    left: 130px;
+  }
+  .cardList__btn.btn--right {
+    right: 130px;
+  }
+
+
 }

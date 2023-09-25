@@ -38,7 +38,8 @@
 
 .grupo-input input,
 .grupo-input textarea {
-  width: 100%;
+  width: calc(100% - 10px);
+  padding-left: 10px;
   height: 45px;
   outline: none;
   border: none;

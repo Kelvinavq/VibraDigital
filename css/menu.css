@@ -39,7 +39,7 @@ nav .btn {
     height: 45px;
     border-radius: 30px;
     border: none;
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     background: linear-gradient(90deg, rgba(255, 151, 2, 1) 0%, rgba(254, 145, 78, 1) 100%);
     cursor: pointer;
