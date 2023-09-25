@@ -175,26 +175,36 @@ function removeCardEvents(card) {
 }
 
 function init() {
+
 	let tl = gsap.timeline();
-  
-	tl.to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
-	  delay: 0.5,
-	  duration: 0.4,
-	  stagger: 0.1,
-	  opacity: 1,
-	  translateY: 0,
+
+	tl.to(cardsContainerEl.children, {
+		delay: 0.15,
+		duration: 0.5,
+		stagger: {
+			ease: "power4.inOut",
+			from: "right",
+			amount: 0.1,
+		},
+		"--card-translateY-offset": "0%",
 	})
-	.to(
-	  [buttons.prev, buttons.next],
-	  {
+		.to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+		delay: 0.5,
 		duration: 0.4,
+		stagger: 0.1,
 		opacity: 1,
-		pointerEvents: "all",
-	  },
-	  "-=0.4"
+		translateY: 0,
+	})
+		.to(
+		[buttons.prev, buttons.next],
+		{
+			duration: 0.4,
+			opacity: 1,
+			pointerEvents: "all",
+		},
+		"-=0.4"
 	);
-  }
-  
+}
 
 const waitForImages = () => {
 	const images = [...document.querySelectorAll("img")];
