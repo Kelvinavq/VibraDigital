@@ -12,7 +12,7 @@ $mensaje = $_POST['mensaje'];
 include("alertas.php");
 
 
-$para      = $correo;
+$para      = "valeraquintero@outlook.es";
 $titulo    = 'Contacto - Vibra Digital';
 $mensaje   = '
         
