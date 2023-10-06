@@ -316,7 +316,7 @@
     <!-- metodo de desarrollo -->
 
     <!-- testimonios -->
-    <section class="testimonial-section">
+    <!-- <section class="testimonial-section">
       <div class="large-container">
         <div class="sec-title">
           <span class="title">Testimonial</span>
@@ -324,7 +324,6 @@
         </div>
 
         <div class="testimonial-carousel owl-carousel owl-theme">
-          <!-- Testimonial Block -->
           <div class="testimonial-block">
             <div class="inner-box">
               <div class="text">
@@ -346,7 +345,6 @@
             </div>
           </div>
 
-          <!-- Testimonial Block -->
           <div class="testimonial-block">
             <div class="inner-box">
               <div class="text">
@@ -368,7 +366,6 @@
             </div>
           </div>
 
-          <!-- Testimonial Block -->
           <div class="testimonial-block">
             <div class="inner-box">
               <div class="text">
@@ -400,7 +397,7 @@
           </figure>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- testimonios -->
 
