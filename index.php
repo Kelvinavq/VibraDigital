@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/ventajas.css" />
     <link rel="stylesheet" href="css/procesos.css" />
     <link rel="stylesheet" href="css/metodo.css" />
+    <link rel="stylesheet" href="css/testimonios.css" />
     <link rel="stylesheet" href="css/portafolio.css" />
     <link rel="stylesheet" href="css/contacto.css" />
 
@@ -32,8 +33,13 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   </head>
 
   <body>
@@ -56,7 +62,9 @@
           <li class="active li menu-inicio"><a href="#inicio">Inicio</a></li>
           <li class="li menu-ventajas"><a href="#ventajas">Ventajas</a></li>
           <li class="li menu-procesos"><a href="#procesos">Proceso</a></li>
-          <li class="li menu-portafolio"><a href="#portafolio">Portafolio</a></li>
+          <li class="li menu-portafolio">
+            <a href="#portafolio">Portafolio</a>
+          </li>
 
           <button class="cerrar">
             <i class="fa-solid fa-xmark"></i>
@@ -94,8 +102,7 @@
           <div class="separador animate__animated animate__fadeInLeft"></div>
           <p class="animate__animated animate__lightSpeedInRight">
             Los negocios que cuentan con una página web cómoda de usar para el
-            cliente, con un mensaje claro, incrementan sus ventas mas de un
-            25%.
+            cliente, con un mensaje claro, incrementan sus ventas mas de un 25%.
           </p>
         </div>
         <div class="circle dos"></div>
@@ -149,7 +156,7 @@
     <!-- tarjetas header -->
 
     <section id="ventajas" class="ventajas">
-      <div class="titulo" >
+      <div class="titulo">
         <h2 data-aos="fade-up">
           ¿Sabía las ventajas de contar con un
           <strong data-aos="fade-up">sitio web bien diseñado?</strong>
@@ -249,8 +256,7 @@
             <i class="fa-solid fa-rocket"></i>
             <span>Lanzamiento</span>
             <p>
-              Su herramienta de generación de clientes 24/7 comienza a
-              funcionar
+              Su herramienta de generación de clientes 24/7 comienza a funcionar
             </p>
           </div>
         </div>
@@ -258,11 +264,19 @@
 
       <div class="texto">
         <p data-aos="fade-up">
-        Si quiere descubrir cómo puede diferenciarse del resto, construyendo un sitio web de alta performance, que genere clientes 24/7, contáctese con nosotros para empezar
+          Si quiere descubrir cómo puede diferenciarse del resto, construyendo
+          un sitio web de alta performance, que genere clientes 24/7, contáctese
+          con nosotros para empezar
         </p>
       </div>
 
-      <button data-aos="fade-up" class="btn" onclick="window.location= '#contacto'">¡Quiero Presupuestos!</button>
+      <button
+        data-aos="fade-up"
+        class="btn"
+        onclick="window.location= '#contacto'"
+      >
+        ¡Quiero Presupuestos!
+      </button>
     </section>
 
     <!-- metodo de desarrollo -->
@@ -300,6 +314,95 @@
       </div>
     </section>
     <!-- metodo de desarrollo -->
+
+    <!-- testimonios -->
+    <section class="testimonial-section">
+      <div class="large-container">
+        <div class="sec-title">
+          <span class="title">Testimonial</span>
+          <h2>What Our core client say ?</h2>
+        </div>
+
+        <div class="testimonial-carousel owl-carousel owl-theme">
+          <!-- Testimonial Block -->
+          <div class="testimonial-block">
+            <div class="inner-box">
+              <div class="text">
+                Why is this important? Because clients want to know the
+                businesses they depend on for advice, are well managed in their
+                own right. Not only that but this event gives you the chance to
+                give your back-office team
+              </div>
+              <div class="info-box">
+                <div class="thumb">
+                  <img
+                    src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="name">Mahfuz Riad</h4>
+                <span class="designation">Ui Designer & CEO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Block -->
+          <div class="testimonial-block">
+            <div class="inner-box">
+              <div class="text">
+                Why is this important? Because clients want to know the
+                businesses they depend on for advice, are well managed in their
+                own right. Not only that but this event gives you the chance to
+                give your back-office team
+              </div>
+              <div class="info-box">
+                <div class="thumb">
+                  <img
+                    src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="name">Mahfuz Riad</h4>
+                <span class="designation">Ui Designer & CEO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Block -->
+          <div class="testimonial-block">
+            <div class="inner-box">
+              <div class="text">
+                Why is this important? Because clients want to know the
+                businesses they depend on for advice, are well managed in their
+                own right. Not only that but this event gives you the chance to
+                give your back-office team
+              </div>
+              <div class="info-box">
+                <div class="thumb">
+                  <img
+                    src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="name">Mahfuz Riad</h4>
+                <span class="designation">Ui Designer & CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumb-layer paroller">
+          <figure class="image">
+            <img
+              src="http://t.commonsupport.com/adro/images/resource/user-thumbs.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonios -->
 
     <!-- portafolio -->
 
@@ -437,18 +540,33 @@
         <h2 data-aos="fade-up"><strong>Contáctenos</strong></h2>
         <p></p>
       </div>
-      <form action="mail.php" id="contacto-form" method="post" data-aos="fade-up">
+      <form
+        action="mail.php"
+        id="contacto-form"
+        method="post"
+        data-aos="fade-up"
+      >
         <div class="left">
           <div class="grupo-input">
-            <input type="text" placeholder="Nombre" id="nombre" name="nombre"/>
+            <input type="text" placeholder="Nombre" id="nombre" name="nombre" />
           </div>
 
           <div class="inputs">
             <div class="grupo-input">
-              <input type="tel" placeholder="Teléfono" id="telefono" name="telefono" />
+              <input
+                type="tel"
+                placeholder="Teléfono"
+                id="telefono"
+                name="telefono"
+              />
             </div>
             <div class="grupo-input">
-              <input type="email" placeholder="Correo electrónico" id="correo" name="correo" />
+              <input
+                type="email"
+                placeholder="Correo electrónico"
+                id="correo"
+                name="correo"
+              />
             </div>
           </div>
 
@@ -460,11 +578,10 @@
             ></textarea>
           </div>
 
-
-          <input type="submit" value="Enviar" class="btn">
+          <input type="submit" value="Enviar" class="btn" />
         </div>
         <div class="right" id="particles-js" data-aos="fade-up">
-          <img src="assets/img/Simple-claro.png" alt="">
+          <img src="assets/img/Simple-claro.png" alt="" />
         </div>
       </form>
     </section>
@@ -484,12 +601,10 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <!-- Waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
+    <script src="js/testimonios.js"></script>
     <script src="js/portafolio.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/animaciones.js"></script>
@@ -498,6 +613,5 @@
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
