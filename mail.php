@@ -1,7 +1,7 @@
 <?php
 
 
-$correo = 'kvalera200244@gmail.com';
+$correo = $_POST['correo'];
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
@@ -25,8 +25,8 @@ $mensaje   = '
         Mensaje:   ' . $nombre . '
 
         ';
-$cabeceras = 'From: Vibradigital@vibra.com' . "\r\n" .
-    'Reply-To: Vibradigital@vibra.com' . "\r\n" .
+$cabeceras = 'From: contacto@digitalvibra.com' . "\r\n" .
+    'Reply-To: contacto@digitalvibra.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 if (mail($para, $titulo, $mensaje, $cabeceras)) {
