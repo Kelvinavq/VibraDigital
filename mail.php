@@ -22,7 +22,7 @@ $mensaje   = '
         Teléfono: ' . $telefono . ' 
         Correo: ' . $correo . ' 
 
-        Mensaje:   ' . $nombre . '
+        Mensaje:   ' . $mensaje . '
 
         ';
 $cabeceras = 'From: contacto@digitalvibra.com' . "\r\n" .
