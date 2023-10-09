@@ -4,8 +4,8 @@ $(document).ready(function(){
   // Testimonial Carousel
   if ($(".testimonial-carousel").length) {
     $(".testimonial-carousel").owlCarousel({
-      animateOut: "slideOutDown",
-      animateIn: "zoomIn",
+      animateOut: "fadeOut",
+      animateIn: "fadeIn",
       loop: true,
       margin: 0,
       nav: true,
@@ -26,7 +26,7 @@ $(document).ready(function(){
           items: 1,
         },
         1024: {
-          items: 1,
+          items: 2,
         },
       },
     });
