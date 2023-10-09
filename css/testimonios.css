@@ -116,14 +116,18 @@
   top: 0;
   height: 82px;
   width: 82px;
-}
-
-.testimonial-block .info-box .thumb img {
   border: 6px solid #e5e6fa;
   border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-block .info-box .thumb img {
+  overflow: hidden;
   display: block;
-  width: 100%;
+  width: 80%;
   box-shadow: 0 45px 45px rgba(147, 147, 147, 0.35);
 }
 

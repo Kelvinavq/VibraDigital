@@ -37,6 +37,9 @@ switch ($location) {
   case "#portafolio":
     document.querySelector(".menu-portafolio").classList.add("active");
     break;
+    case "#testimonios":
+      document.querySelector(".menu-testimonios").classList.add("active");
+      break;
 
   default:
     document.querySelector(".menu-inicio").classList.add("active");
