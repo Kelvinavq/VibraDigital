@@ -11,6 +11,7 @@ $(document).ready(function(){
       nav: true,
       smartSpeed: 10000,
       autoplay: 10000,
+      autoplayTimeout:10000 ,
       navText: [
         '<span class="arrow-left"></span>',
         '<span class="arrow-right"></span>',
