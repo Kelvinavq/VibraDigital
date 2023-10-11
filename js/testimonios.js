@@ -10,7 +10,7 @@ $(document).ready(function(){
       margin: 0,
       nav: true,
       smartSpeed: 300,
-      autoplay: 3000,
+      autoplay: 7000,
       navText: [
         '<span class="arrow-left"></span>',
         '<span class="arrow-right"></span>',
