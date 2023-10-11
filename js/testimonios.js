@@ -9,7 +9,7 @@ $(document).ready(function(){
       loop: true,
       margin: 0,
       nav: true,
-      smartSpeed: 800,
+      smartSpeed: 10000,
       autoplay: 10000,
       navText: [
         '<span class="arrow-left"></span>',
