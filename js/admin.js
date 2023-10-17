@@ -23,15 +23,15 @@ toggle.onclick = function () {
 $location = window.location.pathname;
 console.log($location);
 switch ($location) {
-  case "/VibraDigital/admin/admin.php":
+  case "/admin/admin.php":
     document.querySelector(".dashboard").classList.add("active");
     break;
 
-  case "/VibraDigital/admin/testimonios.php":
+  case "/admin/testimonios.php":
     document.querySelector(".testimonios").classList.add("active");
     break;
 
-  case "/VibraDigital/admin/portafolio.php":
+  case "/admin/portafolio.php":
     document.querySelector(".portafolio").classList.add("active");
     break;
 
