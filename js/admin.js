@@ -19,3 +19,27 @@ toggle.onclick = function () {
   navigation.classList.toggle("active");
   main.classList.toggle("active");
 };
+
+$location = window.location.pathname;
+console.log($location);
+switch ($location) {
+  case "/VibraDigital/admin/admin.php":
+    document.querySelector(".dashboard").classList.add("active");
+    break;
+
+  case "/VibraDigital/admin/testimonios.php":
+    document.querySelector(".testimonios").classList.add("active");
+    break;
+
+  case "/VibraDigital/admin/portafolio.php":
+    document.querySelector(".portafolio").classList.add("active");
+    break;
+
+  default:
+    break;
+}
+
+
+function toggleModal(){
+  document.body.classList.toggle("open");
+}

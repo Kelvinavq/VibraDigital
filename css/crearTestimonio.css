@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.img img {
+  width: 500px;
+}
+
+.login-content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-content form .head img {
+  max-width: 150px;
+}
+
+.login-content form .head h2 {
+  font-size: 2.1em;
+}
+
+.login-content form .head p {
+  font-size: 1em;
+  color: #7f7f7f;
+  font-weight: lighter;
+  margin: 0 50px;
+}
+
+.login-content form .grupo-input {
+  width: 100%;
+  position: relative;
+  max-width: 420px;
+  text-align: left;
+}
+.login-content form .grupo-input input,
+.login-content form .grupo-input textarea {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-bottom: 2px solid #b4b3b3;
+  color: #7f7f7f;
+  font-weight: 600;
+  padding-left: 35px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+.login-content form .grupo-input textarea {
+  padding-top: 12px;
+}
+
+.login-content form .grupo-input span:not(.file) {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #b4b3b3;
+}
+
+.login-content form .grupo-input input:focus,
+.login-content form .grupo-input textarea:focus {
+  border-bottom: 2px solid #ff9702;
+}
+
+.login-content form .grupo-input input[type="file"] {
+  display: none;
+}
+
+.login-content form .grupo-input label {
+  font-weight: lighter;
+  color: #7f7f7f;
+  text-align: left;
+}
+
+.login-content form .grupo-input .upload {
+  margin-top: 15px;
+  width: 100%;
+  background: #ff9702;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 8px;
+  color: #fff;
+}
+
+.login-content form .grupo-input .btn {
+  border: none;
+  background: #17181d;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-content form .head p {
+    margin: 0;
+  }
+
+  .login-content form .grupo-input input,
+  .login-content form .grupo-input textarea {
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+
+  .login-content h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+
+  .img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .login-content {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 620px) {
+  .container {
+    margin: 50px 0;
+    padding: 0 10px;
+  }
+
+  .login-content form .head h2 {
+    font-size: 1.5em;
+  }
+
+  .login-content form .head p {
+    font-size: 1em;
+  }
+}

@@ -9,17 +9,11 @@
   box-sizing: border-box;
 }
 
-:root {
-  --blue: #2a2185;
-  --white: #fff;
-  --gray: #f5f5f5;
-  --black1: #222;
-  --black2: #999;
-}
 
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container {
@@ -32,8 +26,8 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background: var(--blue);
-  border-left: 10px solid var(--blue);
+  background: var(--oscuro-dos);
+  border-left: 10px solid var(--primario);
   transition: 0.5s;
   overflow: hidden;
 }
@@ -56,9 +50,9 @@ body {
   border-bottom-left-radius: 30px;
 }
 
-.navigation ul li:hover,
-.navigation ul li.hovered {
-  background-color: var(--white);
+
+.navigation ul li.active {
+  background-color: var(--blanco);
 }
 
 .navigation ul li:nth-child(1) {
@@ -72,11 +66,12 @@ body {
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: var(--white);
+  color: var(--blanco);
 }
 .navigation ul li:hover a,
-.navigation ul li.hovered a {
-  color: var(--blue);
+.navigation ul li.hovered a,
+.navigation ul li.active a {
+  color: var(--primario);
 }
 
 .navigation ul li a .icon {
@@ -86,6 +81,11 @@ body {
   height: 60px;
   line-height: 75px;
   text-align: center;
+}
+
+.navigation ul li a .icon img{
+  max-width: 50px;
+  margin-left: 10px;
 }
 .navigation ul li a .icon ion-icon {
   font-size: 1.75rem;
@@ -102,8 +102,8 @@ body {
 }
 
 /* --------- curve outside ---------- */
-.navigation ul li:hover a::before,
-.navigation ul li.hovered a::before {
+
+.navigation ul li.active a::before {
   content: "";
   position: absolute;
   right: 0;
@@ -112,11 +112,12 @@ body {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px 35px 0 10px var(--white);
+  box-shadow: 35px 35px 0 10px var(--blanco);
   pointer-events: none;
 }
-.navigation ul li:hover a::after,
-.navigation ul li.hovered a::after {
+
+.navigation ul li.active a::after {
+  
   content: "";
   position: absolute;
   right: 0;
@@ -125,7 +126,7 @@ body {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px -35px 0 10px var(--white);
+  box-shadow: 35px -35px 0 10px var(--blanco);
   pointer-events: none;
 }
 
@@ -135,7 +136,7 @@ body {
   width: calc(100% - 300px);
   left: 300px;
   min-height: 100vh;
-  background: var(--white);
+  background: var(--blanco);
   transition: 0.5s;
 }
 .main.active {
@@ -174,14 +175,33 @@ body {
   /* margin-top: 10px; */
 }
 
+.head{
+  width: 100%;
+  padding: 20px;
+}
+
+.head button{
+  padding: 10px 20px;
+  border: none;
+  color: var(--blanco);
+  background: var(--primario);
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+}
+
 .details .recentOrders {
   position: relative;
   display: grid;
-  min-height: 500px;
-  background: var(--white);
+  height: auto;
+  background: var(--blanco);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
+}
+
+.details .recentOrders p{
+  margin-top: 20px;
 }
 
 .details .cardHeader {
@@ -191,14 +211,14 @@ body {
 }
 .cardHeader h2 {
   font-weight: 600;
-  color: var(--blue);
+  color: var(--primario);
 }
 .cardHeader .btn {
   position: relative;
   padding: 5px 10px;
-  background: var(--blue);
+  background: var(--primario);
   text-decoration: none;
-  color: var(--white);
+  color: var(--blanco);
   border-radius: 6px;
 }
 
@@ -219,36 +239,40 @@ body {
   border-bottom: none;
 }
 .details .recentOrders table tbody tr:hover {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--primario);
+  color: var(--blanco);
 }
 
 
 
 .details .recentOrders table tr td {
-  padding: 10px;
+  padding: 20px 10px;
   cursor: pointer;
 }
-.status.delivered {
+
+.details .recentOrders table tr td img{
+  max-width: 30px;
+}
+.status.aprobado {
   padding: 2px 4px;
   background: #8de02c;
-  color: var(--white);
+  color: var(--blanco);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
 }
-.status.pending {
+.status.pendiente {
   padding: 2px 4px;
   background: #e9b10a;
-  color: var(--white);
+  color: var(--blanco);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
 }
-.status.return {
+.status.rechazado {
   padding: 2px 4px;
   background: #f00;
-  color: var(--white);
+  color: var(--blanco);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -256,7 +280,7 @@ body {
 .status.inProgress {
   padding: 2px 4px;
   background: #1795ce;
-  color: var(--white);
+  color: var(--blanco);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -267,7 +291,7 @@ body {
   display: grid;
   min-height: 500px;
   padding: 20px;
-  background: var(--white);
+  background: var(--blanco);
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
@@ -299,11 +323,11 @@ body {
   color: var(--black2);
 }
 .recentCustomers table tr:hover {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--primario);
+  color: var(--blanco);
 }
 .recentCustomers table tr:hover td h4 span {
-  color: var(--white);
+  color: var(--blanco);
 }
 
 /* ====================== Responsive Design ========================== */
@@ -325,14 +349,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  .details {
+  .details, 
+  .proyecto .inputs-modal {
     grid-template-columns: 1fr;
   }
   .recentOrders {
     overflow-x: auto;
+    overflow-y: scroll;
   }
   .status.inProgress {
     white-space: nowrap;
+  }
+
+  .details{
+    padding: 5px;
   }
 }
 
@@ -365,3 +395,4 @@ body {
     left: initial;
   }
 }
+

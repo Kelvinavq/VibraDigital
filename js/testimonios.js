@@ -9,7 +9,7 @@ $(document).ready(function(){
       loop: true,
       margin: 0,
       nav: true,
-      smartSpeed: 10000,
+      smartSpeed: 1000,
       autoplay: 10000,
       autoplayTimeout:10000 ,
       navText: [
