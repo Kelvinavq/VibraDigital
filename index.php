@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vibra Digital</title>
+  <title>Diseño y Desarrollo Web | Vibra Digital</title>
 
   <!-- css -->
   <link rel="icon" href="assets/img/Simple-claro.png" />
@@ -32,6 +32,14 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+  <!-- meta -->
+  <meta name="description" content="Impulsamos tu presencia en línea con diseños web creativos y desarrollo a medida. Potencia tu marca con soluciones digitales innovadoras y atractivas.">
+
+  <meta name="keywords" content="vibra digital, sitios web, pagina web, seo, sitio web, desarrollo web, programacion web, agencia digital, diseño web">
+
+  <link rel="canonical" href="https://digitalvibra.com/" />
+
 </head>
 
 <body>
@@ -46,7 +54,7 @@
     <nav>
       <div class="logo">
         <a href="#">
-          <img width="100" src="assets/img/Simple.png" alt="" />
+          <img width="100" src="assets/img/Simple.png" alt="logo vibra digital" />
         </a>
       </div>
 
@@ -106,7 +114,7 @@
 
     <div class="right">
       <div class="img">
-        <img src="assets/img/Recurso 3.svg" alt="" />
+        <img src="assets/img/Recurso 3.svg" alt="diseño web vibra digital" />
       </div>
     </div>
   </header>
@@ -370,7 +378,7 @@
           <?php foreach ($proyectos as $proyecto) { ?>
             <a href="<?php echo $proyecto['link'] ?>" target="_blank" class="card current--card">
               <div class="card__image">
-                <img src="assets/portafolio/<?php echo $proyecto['image_portrait'] ?>" alt="" />
+                <img src="assets/portafolio/<?php echo $proyecto['image_portrait'] ?>" alt="<?php echo $proyecto['name'] ?>" />
               </div>
             </a>
           <?php } ?>
@@ -404,7 +412,7 @@
         <?php foreach ($proyectos as $proyecto) { ?>
 
           <div class="app__bg__image current--image">
-            <img src="assets/portafolio/<?php echo $proyecto['image_landscape'] ?>" alt="" />
+            <img src="assets/portafolio/<?php echo $proyecto['image_landscape'] ?>" alt="<?php echo $proyecto['name'] ?>" />
           </div>
 
         <?php } ?>
@@ -465,7 +473,7 @@
         <input type="submit" value="Enviar" class="btn" />
       </div>
       <div class="right" id="particles-js" data-aos="fade-up">
-        <img src="assets/img/Simple-claro.png" alt="" />
+        <img src="assets/img/Simple-claro.png" alt="logotipo vibra digital" />
       </div>
     </form>
   </section>
