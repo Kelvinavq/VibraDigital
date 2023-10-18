@@ -40,6 +40,9 @@
 
   <link rel="canonical" href="https://digitalvibra.com/" />
 
+  <meta name="robots" content="index, follow">
+
+
 </head>
 
 <body>
