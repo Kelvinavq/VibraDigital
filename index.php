@@ -42,6 +42,22 @@
 
   <meta name="robots" content="index, follow">
 
+  <!-- analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XHM29H0F3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1XHM29H0F3');
+  </script>
+
+  <!-- console -->
+  <meta name="google-site-verification" content="X3lUv-ul-BJkYb7f-QiDrmsVw5KJwqmVB9fqGTaDhXQ" />
 
 </head>
 
@@ -405,7 +421,7 @@
               <h1 class="text name"><?php echo $proyecto['name'] ?></h1>
               <a href="<?php echo $proyecto['link'] ?>" target="_blank" class="text description"><?php echo $proyecto['description'] ?></a>
             </div>
-            
+
           <?php } ?>
 
         </div>
